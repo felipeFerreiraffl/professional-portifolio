@@ -1,3 +1,16 @@
+/* Pré-configuração de cores */
+:root {
+    --header-black: #1c1c1c;
+    --title-black: #363636;
+    --main-black: #5e5e5e; 
+    --green: #00a300;
+    --h1-green: #14e714;
+    --lime-green: #58f858;
+    --lightest-green: #b3ffb3;
+    --white: #f0f0f0;
+}
+
+/* Configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +19,162 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header {
-    width: 100%;
-    height: 1080px;
-    color: white;
-}
-
 body {
-    background-color: rgb(39, 39, 39);
+    background-color: var(--main-black);
 }
 
-section ul li{
+#menu {
+    height: 100%;
+    width: 275px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--header-black);
+    padding-top: 3%;
+}
+
+#menu nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
-section nav a {
-    color: white;
+#menu a {
+    margin-bottom: 30px;
+    color: var(--white);
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+/* Ao passar o mouse em cima */
+#menu a:hover, a:focus {
+    font-size: 22px;
+    border-bottom: double 3px var(--green);
+}
+
+#menu-logo {
+    font-size: 15px;
+    margin-bottom: 30%;
+}
+
+#menu-logo img {
+    background-image: linear-gradient(to top, var(--lightest-green), var(--lime-green));
+    border: double 5px var(--green);
+    border-radius: 50%;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+/* Ao passar o mouse na imagem */
+#menu-logo img:hover, img:focus {
+    border: double 5px var(--lime-green);
+    width: 125px;
+    height: 105px;
+}
+
+main, footer {
+    color: var(--white);
+    font-size: 22px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    padding-left: 25%;
+}
+
+main section {
+    margin-bottom: 25%;
+}
+
+main, footer > h1, h4 {
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+main, footer > h1, i {
+    text-indent: 15px;
+}
+
+main h1 {
+    background-color: var(--header-black);
+    width: fit-content;
+    padding: 15px;
+    padding-right: 30px;
+    border: double 3px var(--green);
+    transition: 0.2s ease-in-out;
+}
+
+main h1:hover, h1:focus {
+    border: double 6px var(--h1-green);
+}
+
+#home {
+    width: 90%;
+    padding: 50px;
+    background-color: var(--title-black);
+    border: double 3px var(--green);
+    transition: 0.5s ease;
+}
+
+#home:hover, #home:focus {
+    padding: 80px;
+    border: double 3px var(--h1-green);
+}
+
+#home > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-texto{
+    background-color: var(--header-black);
+    padding: 20px;
+    width: 60%;
+    margin-top: 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: double 3px var(--green);
+
+    /* Fazer o texto aparecer */
+    overflow-y: hidden;
+    max-height: 50px;
+    transition: max-height 0.5s ease;
+}
+
+#home-texto:hover, #home-texto:focus {
+    max-height: 290px;
+    border: double 6px var(--h1-green);
+}
+
+#home-texto h4 {
+    font-size: 30px;
+}
+
+#home-image img {
+    background-image: linear-gradient(to top, var(--lightest-green), var(--lime-green));
+    border: double 5px var(--green);
+    border-radius: 50%;
+    filter: grayscale(50);
+    transition: 0.3s ease;
+}
+
+#home-image img:hover, img:focus {
+    width: 280px;
+    filter: none;
+    border: double 5px var(--lime-green);
+}
+
+footer h1 {
+    background-color: var(--title-black);
+    margin-bottom: 30px;
+    width: fit-content;
+    padding: 15px;
+    padding-right: 30px;
+    border: double 3px var(--green);
+    transition: 0.2s ease;
+}
+
+footer h1:hover, h1:focus {
+    border: double 6px var(--h1-green);
 }
