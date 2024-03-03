@@ -14,11 +14,11 @@
                 <div id="menu-logo">
                     <img src="https://cdn.icon-icons.com/icons2/37/PNG/512/glasses_3629.png" width="150" height="130" alt="Oculos icon">
                 </div>
-                <a href="#home" onclick="scroll()">Home</a>
-                <a href="#sobre-mim" onclick="scroll()">Sobre mim</a>
-                <a href="#portfolio" onclick="scroll()">Portfólio</a>
-                <a href="#extra" onclick="scroll()">Extra</a>
-                <a href="#contatos" onclick="scroll()">Contatos</a>
+                <a id="a-home" href="#home" onclick="scroll()">Home</a>
+                <a id="a-sobre-mim" href="#sobre-mim" onclick="scroll()">Sobre mim</a>
+                <a id="a-portfolio" href="#portfolio" onclick="scroll()">Portfólio</a>
+                <a id="a-extra" href="#extra" onclick="scroll()">Extra</a>
+                <a id="a-contatos" href="#contatos" onclick="scroll()">Contatos</a>
             </nav>
         </section>
     </header>
@@ -27,7 +27,7 @@
             <div>
                 <h1>Home<i class="fa fa-home" aria-hidden="true"></i></h1>
                 <div>
-                    <div id="home-texto" class="rolamento">
+                    <div id="home-texto">
                         <h4>Bem-vindos ao meu portfólio</h4>
                         <p>Aqui você verá uma página mostrando o meu portfólio, além outras coisas, usando meus conhecimentos de HTML, CSS e JavaScript</p><br>
                         <p>Espero que goste!</p>
@@ -41,14 +41,31 @@
         <section id="sobre-mim">
             <div>
                 <h1>Sobre mim<i class="fa fa-user" aria-hidden="true"></i></h1>
-                <ul>
-                    <li><h4>Felipe Ferreira Lima</h4></li>
-                    <li><h4>14/07/2004</h4></li>
-                    <li><h4>Brasileiro</h4></li>
-                </ul>
-                <p>Sou apenas um estudante de programação que se interessa em ingressar nesse mundo da tecnologia</p>
-                <p>Estou realizando o curso técnico de Desenvolvimento de Sistemas no SENAI Suíco Brasileiro Paulo Ernesto Tolle, esperando me ingressar neste mercado concorrido</p>
-                <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width="300" alt="Programador">
+                <div id="sobre-mim-info">
+                    <div>
+                        <ul>
+                            <li>
+                                <h3>Nome</h3>
+                                <h4>Felipe Ferreira Lima</h4>
+                            </li>
+                            <li>
+                                <h3>Data de Nascimento</h3>
+                                <h4>14/07/2004</h4>
+                            </li>
+                            <li>
+                                <h3>Nacionalidade</h3>
+                                <h4>🟢 Brasileiro 🟡</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Sou apenas um estudante de programação que se interessa em ingressar nesse mundo da tecnologia</p><br>
+                        <p>Estou realizando o curso técnico de Desenvolvimento de Sistemas no SENAI Suíco Brasileiro Paulo Ernesto Tolle</p>
+                    </div>
+                </div>
+                <div id="sobre-mim-img">
+                    <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width="300" alt="Programador">
+                </div>
             </div>
         </section>
         <section id="portfolio">

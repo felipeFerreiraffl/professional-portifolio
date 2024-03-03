@@ -3,7 +3,14 @@
     --header-black: #1c1c1c;
     --title-black: #363636;
     --main-black: #5e5e5e; 
+    --purple: #8B008B; 
+    --light-purple: #fd11fd;
+    --lightest-purple: #ff9cff;
+    --blue: #3e3eff; 
+    --light-blue: #9090ff; 
     --green: #00a300;
+    --yellow: #ffff3e;
+    --light-yellow: #ffff94;
     --h1-green: #14e714;
     --lime-green: #58f858;
     --lightest-green: #b3ffb3;
@@ -49,7 +56,46 @@ body {
 /* Ao passar o mouse em cima */
 #menu a:hover, a:focus {
     font-size: 22px;
-    border-bottom: double 3px var(--green);
+}
+
+#a-home {
+    transition: 0.3s ease;
+}
+
+#a-home:hover, #a-home:focus {
+    border-bottom: solid 3px var(--green);
+}
+
+#a-sobre-mim {
+    transition: 0.3s ease;
+}
+
+#a-sobre-mim:hover, #a-sobre-mim:focus {
+    border-bottom: solid 3px var(--purple);
+}
+
+#a-portfolio {
+    transition: 0.3s ease;
+}
+
+#a-portfolio:hover, #a-portfolio:focus {
+    border-bottom: solid 3px var(--blue);
+}
+
+#a-extra {
+    transition: 0.3s ease;
+}
+
+#a-extra:hover, #a-extra:focus {
+    border-bottom: solid 3px var(--yellow);
+}
+
+#a-contatos {
+    transition: 0.3s ease;
+}
+
+#a-contatos:hover, #a-contatos:focus {
+    border-bottom: solid 3px var(--green);
 }
 
 #menu-logo {
@@ -82,7 +128,7 @@ main, footer {
 }
 
 main section {
-    margin-bottom: 25%;
+    margin-bottom: 45%;
 }
 
 main, footer > h1, h4 {
@@ -96,15 +142,14 @@ main, footer > h1, i {
 
 main h1 {
     background-color: var(--header-black);
-    width: fit-content;
     padding: 15px;
+    margin-bottom: 10%;
     padding-right: 30px;
-    border: double 3px var(--green);
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease;
 }
 
 main h1:hover, h1:focus {
-    border: double 6px var(--h1-green);
+    padding: 20px;
 }
 
 #home {
@@ -112,7 +157,7 @@ main h1:hover, h1:focus {
     padding: 50px;
     background-color: var(--title-black);
     border: double 3px var(--green);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 #home:hover, #home:focus {
@@ -120,10 +165,22 @@ main h1:hover, h1:focus {
     border: double 3px var(--h1-green);
 }
 
+#home h1 {
+    width: 210px;
+    border: double 3px var(--green);
+    transition: 0.3s ease;
+}
+
+#home h1:hover, h1:focus {
+    width: 230px;
+    border: double 3px var(--h1-green);
+}
+
 #home > div > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 #home-texto{
@@ -139,7 +196,7 @@ main h1:hover, h1:focus {
     /* Fazer o texto aparecer */
     overflow-y: hidden;
     max-height: 50px;
-    transition: max-height 0.5s ease;
+    transition: 0.5s ease;
 }
 
 #home-texto:hover, #home-texto:focus {
@@ -152,7 +209,7 @@ main h1:hover, h1:focus {
 }
 
 #home-image img {
-    background-image: linear-gradient(to top, var(--lightest-green), var(--lime-green));
+    background-image: radial-gradient(var(--lightest-green), var(--lime-green));
     border: double 5px var(--green);
     border-radius: 50%;
     filter: grayscale(50);
@@ -165,16 +222,95 @@ main h1:hover, h1:focus {
     border: double 5px var(--lime-green);
 }
 
-footer h1 {
+#sobre-mim {
+    width: 90%;
+    padding: 50px;
     background-color: var(--title-black);
-    margin-bottom: 30px;
-    width: fit-content;
+    border: double 3px var(--purple);
+    transition: 0.3s ease;
+}
+
+#sobre-mim:hover {
+    padding: 80px;
+    border: double 3px var(--light-purple);
+}
+
+#sobre-mim h1 {
+    width: 280px;
+    border: double 3px var(--purple);
+    transition: 0.3s ease;
+}
+
+#sobre-mim h1:hover, h1:focus {
+    width: 300px;
+    border: double 3px var(--light-purple);
+}
+
+#sobre-mim-info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+}
+
+#sobre-mim-info ul {
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+#sobre-mim-info li {
+    overflow-y: hidden;
+    max-height: 60px;
+    transition: 0.5s ease;
+
+    background-color: var(--header-black);
+    border: double 3px var(--purple);
     padding: 15px;
-    padding-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+#sobre-mim li:hover, li:focus {
+    max-height: 250px;
+    border: double 3px var(--light-purple);
+}
+
+#sobre-mim-info p {
+    width: 950px;
+}
+
+#sobre-mim-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#sobre-mim-img img {
+    border: double 5px var(--purple);
+    border-radius: 50%;
+    background-image: radial-gradient(var(--lightest-purple), var(--light-purple));
+    transition: 0.3s ease;
+}
+
+#sobre-mim-img img:hover, img:focus {
+    border: double 5px var(--light-purple);
+    width: 330px;
+}
+
+footer h1 {
+    background-color: var(--header-black);
+    padding: 15px;
+    width: 220px;
+    margin-bottom: 10%;
     border: double 3px var(--green);
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 footer h1:hover, h1:focus {
-    border: double 6px var(--h1-green);
+    width: 250px;
+    border: double 3px var(--h1-green);
 }
