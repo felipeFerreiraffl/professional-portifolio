@@ -21,3 +21,33 @@ function scroll() {
 }
 
 scroll();
+
+// Função do carrossel
+let index = 0;
+const imagens = document.querySelectorAll('#carrossel div');
+
+function voltar() {
+    index--;
+    
+    if (index < 0) {
+        index = imagens.length - 1;
+    }
+
+    updateCarrossel();
+}
+
+function prox() {
+    index++;
+
+    if (index >= imagens.length) {
+        index = 0;
+    }
+
+    updateCarrossel();
+}
+
+function updateCarrossel() {
+    // Garante qual imagem aparecerá no carrossel
+    const offset = -index * 100;
+    document.querySelector('carrossel div').style.transform = `translateY(${offset}%)`
+}

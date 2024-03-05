@@ -21,6 +21,7 @@
 
 /* Configurações gerais */
 * {
+    list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -110,14 +111,14 @@ body {
     border: double 5px var(--green);
     border-radius: 50%;
     padding: 25px;
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 /* Ao passar o mouse na imagem */
 #menu-logo img:hover, img:focus {
     border: double 5px var(--lime-green);
-    width: 125px;
-    height: 105px;
+    width: 160px;
+    height: 145px;
 }
 
 main, footer {
@@ -252,7 +253,6 @@ main h1 {
 }
 
 #sobre-mim-info ul {
-    list-style: none;
     margin-bottom: 5%;
 }
 
@@ -346,7 +346,7 @@ main h1 {
 }
 
 #portfolio-1-img {
-    width: 84%;
+    width: 67%;
     text-align: center;
     background-color: var(--header-black);
     padding: 30px;
@@ -358,7 +358,6 @@ main h1 {
 }
 
 #portfolio-1-img ul {
-    list-style: none;
     display: flex;
     flex-direction: row;
 }
@@ -380,7 +379,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.7s ease;
+    margin-bottom: 7%;
 }
 
 #portfolio-2-titulo {
@@ -398,6 +397,94 @@ main h1 {
     width: 310px;
     padding: 12px;
     border: solid 0.5px var(--light-blue);
+}
+
+#portfolio-2-img {
+    width: 50%;
+    text-align: center;
+    background-color: var(--header-black);
+    padding: 30px;
+    transition: 0.7s ease;
+}
+
+#portfolio-2-img:hover, #portfolio-2-img:focus {
+    border: solid 0.5px var(--light-blue);
+}
+
+#portfolio-2-img ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#portfolio-2-img li {
+    text-indent: 40px;
+}
+
+#portfolio-2-img img {
+    transition: 0.7s ease;
+}
+
+#portfolio-2-img img:hover, img:focus {
+    width: 80px;
+    height: 81px;
+}
+
+#portfolio-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio-projetos h4 {
+    font-size: 25px;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--header-black);
+    border: solid 0.5px var(--blue);
+    margin-bottom: 5%;
+    transition: 0.7s ease;
+}
+
+#portfolio-projetos h4:hover, h4:focus {
+    width:240px;
+    padding: 15px;
+    border: solid 0.5px var(--light-blue);
+}
+
+#portfolio-projetos-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#carrossel {
+    display: flex;
+}
+
+#carrossel > div {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s ease;
+}
+
+#portfolio-projetos button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#anterior {
+    left: 10px;
+}
+
+#proximo {
+    right: 10px;
 }
 
 #extra {
