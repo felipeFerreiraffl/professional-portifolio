@@ -6,14 +6,16 @@
     --purple: #8B008B; 
     --light-purple: #fd11fd;
     --lightest-purple: #ff9cff;
-    --blue: #3e3eff; 
+    --blue: #5454ff; 
     --light-blue: #9090ff; 
     --green: #00a300;
     --yellow: #ffff3e;
-    --light-yellow: #ffff94;
+    --light-yellow: #fffd9a;
     --h1-green: #14e714;
     --lime-green: #58f858;
     --lightest-green: #b3ffb3;
+    --footer-white: #909090;
+    --footer-light-white: #d6d6d6;
     --white: #f0f0f0;
 }
 
@@ -50,7 +52,7 @@ body {
     margin-bottom: 30px;
     color: var(--white);
     font-size: 20px;
-    transition: 0.2s ease;
+    transition: 0.7s ease;
 }
 
 /* Ao passar o mouse em cima */
@@ -59,43 +61,43 @@ body {
 }
 
 #a-home {
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #a-home:hover, #a-home:focus {
-    border-bottom: solid 3px var(--green);
+    border-bottom: solid 2px var(--green);
 }
 
 #a-sobre-mim {
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #a-sobre-mim:hover, #a-sobre-mim:focus {
-    border-bottom: solid 3px var(--purple);
+    border-bottom: solid 2px var(--purple);
 }
 
 #a-portfolio {
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #a-portfolio:hover, #a-portfolio:focus {
-    border-bottom: solid 3px var(--blue);
+    border-bottom: solid 2px var(--blue);
 }
 
 #a-extra {
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #a-extra:hover, #a-extra:focus {
-    border-bottom: solid 3px var(--yellow);
+    border-bottom: solid 2px var(--yellow);
 }
 
 #a-contatos {
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #a-contatos:hover, #a-contatos:focus {
-    border-bottom: solid 3px var(--green);
+    border-bottom: solid 2px var(--green);
 }
 
 #menu-logo {
@@ -120,7 +122,7 @@ body {
 
 main, footer {
     color: var(--white);
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
@@ -145,11 +147,7 @@ main h1 {
     padding: 15px;
     margin-bottom: 10%;
     padding-right: 30px;
-    transition: 0.3s ease;
-}
-
-main h1:hover, h1:focus {
-    padding: 20px;
+    transition: 0.7s ease;
 }
 
 #home {
@@ -157,22 +155,22 @@ main h1:hover, h1:focus {
     padding: 50px;
     background-color: var(--title-black);
     border: double 3px var(--green);
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #home:hover, #home:focus {
-    padding: 80px;
     border: double 3px var(--h1-green);
 }
 
 #home h1 {
     width: 210px;
     border: double 3px var(--green);
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #home h1:hover, h1:focus {
     width: 230px;
+    padding: 3%;
     border: double 3px var(--h1-green);
 }
 
@@ -191,17 +189,16 @@ main h1:hover, h1:focus {
     align-items: center;
     display: flex;
     flex-direction: column;
-    border: double 3px var(--green);
 
     /* Fazer o texto aparecer */
     overflow-y: hidden;
-    max-height: 50px;
-    transition: 0.5s ease;
+    max-height: 45px;
+    transition: 0.7s ease;
 }
 
 #home-texto:hover, #home-texto:focus {
-    max-height: 290px;
-    border: double 6px var(--h1-green);
+    max-height: 350px;
+    border: solid 0.5px var(--h1-green);
 }
 
 #home-texto h4 {
@@ -213,7 +210,7 @@ main h1:hover, h1:focus {
     border: double 5px var(--green);
     border-radius: 50%;
     filter: grayscale(50);
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #home-image img:hover, img:focus {
@@ -227,22 +224,22 @@ main h1:hover, h1:focus {
     padding: 50px;
     background-color: var(--title-black);
     border: double 3px var(--purple);
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #sobre-mim:hover {
-    padding: 80px;
     border: double 3px var(--light-purple);
 }
 
 #sobre-mim h1 {
     width: 280px;
     border: double 3px var(--purple);
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #sobre-mim h1:hover, h1:focus {
     width: 300px;
+    padding: 3%;
     border: double 3px var(--light-purple);
 }
 
@@ -262,10 +259,9 @@ main h1:hover, h1:focus {
 #sobre-mim-info li {
     overflow-y: hidden;
     max-height: 60px;
-    transition: 0.5s ease;
+    transition: 1.5s ease;
 
     background-color: var(--header-black);
-    border: double 3px var(--purple);
     padding: 15px;
 
     display: flex;
@@ -276,11 +272,11 @@ main h1:hover, h1:focus {
 
 #sobre-mim li:hover, li:focus {
     max-height: 250px;
-    border: double 3px var(--light-purple);
+    border: solid 0.5px var(--light-purple);
 }
 
 #sobre-mim-info p {
-    width: 950px;
+    width: 75%;
 }
 
 #sobre-mim-img {
@@ -293,7 +289,7 @@ main h1:hover, h1:focus {
     border: double 5px var(--purple);
     border-radius: 50%;
     background-image: radial-gradient(var(--lightest-purple), var(--light-purple));
-    transition: 0.3s ease;
+    transition: 0.7s ease;
 }
 
 #sobre-mim-img img:hover, img:focus {
@@ -301,16 +297,156 @@ main h1:hover, h1:focus {
     width: 330px;
 }
 
-footer h1 {
-    background-color: var(--header-black);
-    padding: 15px;
-    width: 220px;
-    margin-bottom: 10%;
-    border: double 3px var(--green);
-    transition: 0.3s ease;
+#portfolio {
+    width: 90%;
+    padding: 50px;
+    background-color: var(--title-black);
+    border: double 3px var(--blue);
+    transition: 0.7s ease;
 }
 
-footer h1:hover, h1:focus {
+#portfolio:hover, #portfolio:focus {
+    border: double 3px var(--light-blue);
+}
+
+#portfolio h1 {
     width: 250px;
-    border: double 3px var(--h1-green);
+    border: double 3px var(--blue);
+    transition: 0.7s ease;
+}
+
+#portfolio h1:hover, h1:focus {
+    width: 270px;
+    padding: 3%;
+    border: double 3px var(--light-blue);
+}
+
+#portfolio-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+#portfolio-1-titulo {
+    font-size: 25px;
+    width: 400px;
+    padding: 7px;
+    text-align: center;
+    background-color: var(--header-black);
+    border: solid 0.5px var(--blue);
+    margin-bottom: 5%;
+    transition: 0.7s ease;
+}
+
+#portfolio-1-titulo:hover, #portfolio-1-titulo:focus {
+    width: 420px;
+    padding: 12px;
+    border: solid 0.5px var(--light-blue);
+}
+
+#portfolio-1-img {
+    width: 84%;
+    text-align: center;
+    background-color: var(--header-black);
+    padding: 30px;
+    transition: 0.7s ease;
+}
+
+#portfolio-1-img:hover, #portfolio-1-img:focus {
+    border: solid 0.5px var(--light-blue);
+}
+
+#portfolio-1-img ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#portfolio-1-img li {
+    text-indent: 50px;
+}
+
+#portfolio-1-img img {
+    transition: 0.7s ease;
+}
+
+#portfolio-1-img img:hover, img:focus {
+    width: 80px;
+    height: 81px;
+}
+
+#portfolio-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.7s ease;
+}
+
+#portfolio-2-titulo {
+    font-size: 25px;
+    width: 270px;
+    padding: 7px;
+    text-align: center;
+    background-color: var(--header-black);
+    border: solid 0.5px var(--blue);
+    margin-bottom: 5%;
+    transition: 0.7s ease;
+}
+
+#portfolio-2-titulo:hover, #portfolio-2-titulo:focus {
+    width: 310px;
+    padding: 12px;
+    border: solid 0.5px var(--light-blue);
+}
+
+#extra {
+    width: 90%;
+    padding: 50px;
+    background-color: var(--title-black);
+    border: double 3px var(--yellow);
+    transition: 0.7s ease;
+}
+
+#extra:hover, #extra:focus {
+    border: double 3px var(--light-yellow);
+}
+
+#extra h1 {
+    width: 190px;
+    border: double 3px var(--yellow);
+    transition: 0.7s ease;
+}
+
+#extra h1:hover, h1:focus {
+    width: 210px;
+    padding: 3%;
+    border: double 3px var(--light-yellow);
+}
+
+#contatos {
+    width: 90%;
+    padding: 50px;
+    background-color: var(--title-black);
+    border: double 3px var(--footer-white);
+    transition: 0.7s ease;
+}
+
+#contatos:hover, #contatos:focus {
+    border: double 3px var(--footer-light-white);
+}
+
+#contatos h1 {
+    width: 220px;
+    padding: 15px;
+    margin-bottom: 10%;
+    background-color: var(--header-black);
+    border: double 3px var(--footer-white);
+    transition: 0.7s ease;
+}
+
+#contatos h1:hover, h1:focus {
+    width: 240px;
+    padding: 3%;
+    border: double 3px var(--footer-light-white);
 }
