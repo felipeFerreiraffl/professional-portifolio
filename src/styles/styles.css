@@ -6,11 +6,11 @@
     --purple: #8B008B; 
     --light-purple: #fd11fd;
     --lightest-purple: #ff9cff;
-    --blue: #5454ff; 
-    --light-blue: #9090ff; 
-    --green: #00a300;
-    --yellow: #ffff3e;
-    --light-yellow: #fffd9a;
+    --blue: #0c0cab; 
+    --light-blue: #5a5aff; 
+    --green: #008200;
+    --yellow: #acac00;
+    --light-yellow: #fffc51;
     --h1-green: #14e714;
     --lime-green: #58f858;
     --lightest-green: #b3ffb3;
@@ -431,12 +431,13 @@ main h1 {
 }
 
 #portfolio-projetos {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#portfolio-projetos h4 {
+#portfolio-projetos-titulo {
     font-size: 25px;
     width: 220px;
     padding: 10px;
@@ -447,29 +448,10 @@ main h1 {
     transition: 0.7s ease;
 }
 
-#portfolio-projetos h4:hover, h4:focus {
+#portfolio-projetos-titulo:hover, #portfolio-projetos-titulo:focus {
     width:240px;
     padding: 15px;
     border: solid 0.5px var(--light-blue);
-}
-
-#carrossel {
-    display: block;
-    position: relative;
-    margin: auto;
-    height: 260px;
-    width: 500px;
-}
-
-#carrossel li {
-    position: absolute;
-}
-
-#carrossel img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
 }
 
 #extra {
@@ -494,6 +476,41 @@ main h1 {
     width: 210px;
     padding: 3%;
     border: double 3px var(--light-yellow);
+}
+
+#cursos-lazeres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+#cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+#cursos-titulo {
+    font-size: 25px;
+    width: 220px;
+    padding: 7px;
+    background-color: var(--header-black);
+    border: solid 0.5px var(--yellow);
+    margin-bottom: 5%;
+    transition: 0.7s ease;
+}
+
+#lazeres-titulo {
+    font-size: 25px;
+    width: 220px;
+    padding: 7px;
+    background-color: var(--header-black);
+    border: solid 0.5px var(--yellow);
+    margin-bottom: 5%;
+    transition: 0.7s ease;
 }
 
 #contatos {
