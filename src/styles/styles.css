@@ -9,7 +9,7 @@
     --lightest-purple: #ff9cff;
     --dark-blue: #01001a; 
     --blue: #00009f; 
-    --light-blue: #00759f;
+    --light-blue: #006ce8;
     --dark-green: #001c00;
     --green: #008200;
     --dark-yellow: #1b1b00;
@@ -44,6 +44,7 @@ body {
     top: 0;
     left: 0;
     background-color: var(--header-black);
+    border-right: solid 1px var(--footer-white);
     padding-top: 3%;
 }
 
@@ -111,7 +112,7 @@ body {
 }
 
 #menu-logo img {
-    background-image: radial-gradient(var(--white), var(--footer-white), var(--logo-black));
+    background-image: radial-gradient(var(--white), var(--footer-white));
     border: solid 3px var(--title-black);
     border-radius: 50%;
     padding: 25px;
@@ -137,6 +138,7 @@ main, footer {
 
 main section {
     margin-bottom: 45%;
+    width: 100%;
 }
 
 main, footer > h1, h4 {
@@ -204,7 +206,7 @@ main h1 {
 
 #home-texto:hover, #home-texto:focus {
     max-height: 350px;
-    border: solid 0.5px var(--h1-green);
+    border: solid 1px var(--h1-green);
 }
 
 #home-texto h4 {
@@ -278,11 +280,25 @@ main h1 {
 
 #sobre-mim li:hover, li:focus {
     max-height: 250px;
-    border: solid 0.5px var(--light-purple);
+    border: solid 1px var(--light-purple);
 }
 
-#sobre-mim-info p {
-    width: 75%;
+#sobre-mim-texto {
+    width: 100%;
+    background-color: var(--header-black);
+    border: solid 1px var(--purple);
+    padding: 20px;
+    transition: 0.7s ease;
+}
+
+#sobre-mim-texto:hover, #sobre-mim-texto:focus {
+    border: solid 1px var(--light-purple);
+}
+
+#sobre-mim-texto p {
+    width: 80%;
+    display: flex;
+    text-align: center;
 }
 
 #sobre-mim-img {
@@ -340,7 +356,7 @@ main h1 {
     padding: 7px;
     text-align: center;
     background-color: var(--header-black);
-    border: solid 0.5px var(--blue);
+    border: solid 1px var(--blue);
     margin-bottom: 5%;
     transition: 0.7s ease;
 }
@@ -348,7 +364,7 @@ main h1 {
 #portfolio-1-titulo:hover, #portfolio-1-titulo:focus {
     width: 420px;
     padding: 12px;
-    border: solid 0.5px var(--light-blue);
+    border: solid 1px var(--light-blue);
 }
 
 #portfolio-1-img {
@@ -360,7 +376,7 @@ main h1 {
 }
 
 #portfolio-1-img:hover, #portfolio-1-img:focus {
-    border: solid 0.5px var(--light-blue);
+    border: solid 1px var(--light-blue);
 }
 
 #portfolio-1-img ul {
@@ -394,7 +410,7 @@ main h1 {
     padding: 7px;
     text-align: center;
     background-color: var(--header-black);
-    border: solid 0.5px var(--blue);
+    border: solid 1px var(--blue);
     margin-bottom: 5%;
     transition: 0.7s ease;
 }
@@ -402,7 +418,7 @@ main h1 {
 #portfolio-2-titulo:hover, #portfolio-2-titulo:focus {
     width: 310px;
     padding: 12px;
-    border: solid 0.5px var(--light-blue);
+    border: solid 1px var(--light-blue);
 }
 
 #portfolio-2-img {
@@ -414,7 +430,7 @@ main h1 {
 }
 
 #portfolio-2-img:hover, #portfolio-2-img:focus {
-    border: solid 0.5px var(--light-blue);
+    border: solid 1px var(--light-blue);
 }
 
 #portfolio-2-img ul {
@@ -448,7 +464,7 @@ main h1 {
     padding: 10px;
     text-align: center;
     background-color: var(--header-black);
-    border: solid 0.5px var(--blue);
+    border: solid 1px var(--blue);
     margin-bottom: 5%;
     transition: 0.7s ease;
 }
@@ -456,19 +472,33 @@ main h1 {
 #portfolio-projetos-titulo:hover, #portfolio-projetos-titulo:focus {
     width:240px;
     padding: 15px;
-    border: solid 0.5px var(--light-blue);
+    border: solid 1px var(--light-blue);
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 800px;
     position: relative;
     margin: auto;
+    transition: 0.7s ease;
+  }
+
+  .slideshow-container:hover, .slideshow-container:focus {
+    max-width: 820px;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
+  }
+
+  .mySlides > a img {
+    border: solid 2px var(--blue);
+    transition: 0.7s ease;
+  }
+
+  .mySlides > a img:hover, a img:focus {
+    border: solid 2px var(--light-blue);
   }
   
   /* Next & previous buttons */
@@ -507,13 +537,14 @@ main h1 {
   
   /* Caption text */
   .text {
-    background-color: var(--title-black);
+    background-color: var(--header-black);
     color: var(--white);
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 3px;
     width: 100%;
+    left: 15px;
     text-align: center;
   }
   
@@ -599,7 +630,7 @@ main h1 {
     width: 220px;
     padding: 7px;
     background-color: var(--header-black);
-    border: solid 0.5px var(--yellow);
+    border: solid 1px var(--yellow);
     margin-bottom: 5%;
     transition: 0.7s ease;
 }
@@ -607,7 +638,7 @@ main h1 {
 #cursos-titulo:hover, #cursos-titulo:focus {
     width: 240px;
     padding: 12px;
-    border: solid 0.5px var(--light-yellow);
+    border: solid 1px var(--light-yellow);
 }
 
 #mec-dev {
@@ -632,7 +663,7 @@ main h1 {
 
 #mec-indus:hover, #mec-indus:focus {
     color: var(--white);
-    border: solid 0.5px var(--light-yellow);
+    border: solid 1px var(--light-yellow);
 }
 
 #mec-indus ul {
@@ -661,7 +692,7 @@ main h1 {
 
 #mec-indus li > a:hover, li > a:focus {
     color: var(--white);
-    font-size: 20.5px;
+    font-size: 21px;
 }
 
 #dev-tec {
@@ -679,7 +710,7 @@ main h1 {
 
 #dev-tec:hover, #dev-tec:focus {
     color: var(--white);
-    border: solid 0.5px var(--light-yellow);
+    border: solid 1px var(--light-yellow);
 }
 
 #dev-tec ul {
@@ -708,7 +739,7 @@ main h1 {
 
 #dev-tec li > a:hover, li > a:focus {
     color: var(--white);
-    font-size: 20.5px;
+    font-size: 21px;
 }
 
 #lazeres {
@@ -722,7 +753,7 @@ main h1 {
     width: 210px;
     padding: 7px;
     background-color: var(--header-black);
-    border: solid 0.5px var(--yellow);
+    border: solid 1px var(--yellow);
     margin-bottom: 5%;
     transition: 0.7s ease;
 }
@@ -730,7 +761,7 @@ main h1 {
 #lazeres-titulo:hover, #lazeres-titulo:focus {
     width: 230px;
     padding: 12px;
-    border: solid 0.5px var(--light-yellow);
+    border: solid 1px var(--light-yellow);
 } 
 
 #lazeres-topicos ul {
@@ -743,7 +774,7 @@ main h1 {
 
 #lazeres-topicos li {
     background-color: var(--header-black);
-    border: solid 0.5px var(--yellow);
+    border: solid 1px var(--yellow);
     width: 190px;
     padding: 7px;
     display: flex;
@@ -756,7 +787,7 @@ main h1 {
 
 #lazeres-topicos li:hover, li:focus {
     font-size: 21.3px;
-    border: solid 0.5px var(--light-yellow);
+    border: solid 1px var(--light-yellow);
     color: var(--white);
     width: 200px;
     padding: 12px;
@@ -810,7 +841,7 @@ main h1 {
 
 #contatos-topicos li {
     background-color: var(--header-black);
-    border: solid 0.5px var(--footer-white);
+    border: solid 1px var(--footer-white);
     width: 160px;
     height: 160px;
     padding: 7px;
@@ -823,7 +854,7 @@ main h1 {
 }
 
 #contatos-topicos li:hover, li:focus {
-    border: solid 0.5px var(--footer-light-white);
+    border: solid 1px var(--footer-light-white);
     color: var(--white);
     width: 180px;
     height: 180px;
