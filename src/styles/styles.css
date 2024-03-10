@@ -1,20 +1,24 @@
 /* Pré-configuração de cores */
 :root {
     --header-black: #1c1c1c;
-    --title-black: #363636;
-    --main-black: #5e5e5e; 
+    --title-black: #2f2f2f;
+    --logo-black: #4f4f4f;
+    --dark-purple: #1b001b; 
     --purple: #8B008B; 
     --light-purple: #fd11fd;
     --lightest-purple: #ff9cff;
-    --blue: #0c0cab; 
-    --light-blue: #5a5aff; 
+    --dark-blue: #01001a; 
+    --blue: #00009f; 
+    --light-blue: #00759f;
+    --dark-green: #001c00;
     --green: #008200;
-    --yellow: #acac00;
+    --dark-yellow: #1b1b00;
+    --yellow: #888800;
     --light-yellow: #fffc51;
     --h1-green: #14e714;
     --lime-green: #58f858;
     --lightest-green: #b3ffb3;
-    --footer-white: #909090;
+    --footer-white: #7d7d7d;
     --footer-light-white: #d6d6d6;
     --white: #f0f0f0;
 }
@@ -30,7 +34,7 @@
 }
 
 body {
-    background-color: var(--main-black);
+    background: linear-gradient(to bottom, var(--dark-green), var(--dark-purple), var(--dark-blue), var(--dark-yellow), var(--header-black));
 }
 
 #menu {
@@ -51,7 +55,7 @@ body {
 
 #menu a {
     margin-bottom: 30px;
-    color: var(--white);
+    color: var(--footer-white);
     font-size: 20px;
     transition: 0.7s ease;
 }
@@ -66,7 +70,7 @@ body {
 }
 
 #a-home:hover, #a-home:focus {
-    border-bottom: solid 2px var(--green);
+    color: var(--lime-green);
 }
 
 #a-sobre-mim {
@@ -74,7 +78,7 @@ body {
 }
 
 #a-sobre-mim:hover, #a-sobre-mim:focus {
-    border-bottom: solid 2px var(--purple);
+    color: var(--light-purple);
 }
 
 #a-portfolio {
@@ -82,7 +86,7 @@ body {
 }
 
 #a-portfolio:hover, #a-portfolio:focus {
-    border-bottom: solid 2px var(--blue);
+    color: var(--light-blue);
 }
 
 #a-extra {
@@ -90,7 +94,7 @@ body {
 }
 
 #a-extra:hover, #a-extra:focus {
-    border-bottom: solid 2px var(--yellow);
+    color: var(--light-yellow);
 }
 
 #a-contatos {
@@ -98,7 +102,7 @@ body {
 }
 
 #a-contatos:hover, #a-contatos:focus {
-    border-bottom: solid 2px var(--green);
+    color: var(--footer-light-white);
 }
 
 #menu-logo {
@@ -107,8 +111,8 @@ body {
 }
 
 #menu-logo img {
-    background-image: linear-gradient(to top, var(--lightest-green), var(--lime-green));
-    border: double 5px var(--green);
+    background-image: radial-gradient(var(--white), var(--footer-white), var(--logo-black));
+    border: solid 3px var(--title-black);
     border-radius: 50%;
     padding: 25px;
     transition: 0.7s ease;
@@ -116,9 +120,9 @@ body {
 
 /* Ao passar o mouse na imagem */
 #menu-logo img:hover, img:focus {
-    border: double 5px var(--lime-green);
+    border: solid 3px var(--footer-light-white);
     width: 160px;
-    height: 145px;
+    height: 140px;
 }
 
 main, footer {
@@ -128,6 +132,7 @@ main, footer {
     margin-bottom: 5%;
     width: 100%;
     padding-left: 25%;
+    text-align: center;
 }
 
 main section {
@@ -155,24 +160,24 @@ main h1 {
     width: 90%;
     padding: 50px;
     background-color: var(--title-black);
-    border: double 5px var(--green);
+    border: solid 5px var(--green);
     transition: 0.7s ease;
 }
 
 #home:hover, #home:focus {
-    border: double 5px var(--h1-green);
+    border: solid 5px var(--h1-green);
 }
 
 #home h1 {
     width: 210px;
-    border: double 3px var(--green);
+    border: solid 3px var(--green);
     transition: 0.7s ease;
 }
 
 #home h1:hover, h1:focus {
     width: 230px;
     padding: 3%;
-    border: double 3px var(--h1-green);
+    border: solid 3px var(--h1-green);
 }
 
 #home > div > div {
@@ -208,7 +213,7 @@ main h1 {
 
 #home-image img {
     background-image: radial-gradient(var(--lightest-green), var(--lime-green));
-    border: double 5px var(--green);
+    border: solid 5px var(--green);
     border-radius: 50%;
     filter: grayscale(50);
     transition: 0.7s ease;
@@ -217,31 +222,31 @@ main h1 {
 #home-image img:hover, img:focus {
     width: 280px;
     filter: none;
-    border: double 5px var(--lime-green);
+    border: solid 5px var(--lime-green);
 }
 
 #sobre-mim {
     width: 90%;
     padding: 50px;
     background-color: var(--title-black);
-    border: double 5px var(--purple);
+    border: solid 5px var(--purple);
     transition: 0.7s ease;
 }
 
 #sobre-mim:hover {
-    border: double 5px var(--light-purple);
+    border: solid 5px var(--light-purple);
 }
 
 #sobre-mim h1 {
     width: 280px;
-    border: double 3px var(--purple);
+    border: solid 3px var(--purple);
     transition: 0.7s ease;
 }
 
 #sobre-mim h1:hover, h1:focus {
     width: 300px;
     padding: 3%;
-    border: double 3px var(--light-purple);
+    border: solid 3px var(--light-purple);
 }
 
 #sobre-mim-info > div {
@@ -287,14 +292,14 @@ main h1 {
 }
 
 #sobre-mim-img img {
-    border: double 5px var(--purple);
+    border: solid 5px var(--purple);
     border-radius: 50%;
     background-image: radial-gradient(var(--lightest-purple), var(--light-purple));
     transition: 0.7s ease;
 }
 
 #sobre-mim-img img:hover, img:focus {
-    border: double 5px var(--light-purple);
+    border: solid 5px var(--light-purple);
     width: 330px;
 }
 
@@ -302,24 +307,24 @@ main h1 {
     width: 90%;
     padding: 50px;
     background-color: var(--title-black);
-    border: double 5px var(--blue);
+    border: solid 5px var(--blue);
     transition: 0.7s ease;
 }
 
 #portfolio:hover, #portfolio:focus {
-    border: double 5px var(--light-blue);
+    border: solid 5px var(--light-blue);
 }
 
 #portfolio h1 {
     width: 250px;
-    border: double 3px var(--blue);
+    border: solid 3px var(--blue);
     transition: 0.7s ease;
 }
 
 #portfolio h1:hover, h1:focus {
     width: 270px;
     padding: 3%;
-    border: double 3px var(--light-blue);
+    border: solid 3px var(--light-blue);
 }
 
 #portfolio-1 {
@@ -454,28 +459,114 @@ main h1 {
     border: solid 0.5px var(--light-blue);
 }
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
 #extra {
     width: 90%;
     padding: 50px;
     background-color: var(--title-black);
-    border: double 5px var(--yellow);
+    border: solid 5px var(--yellow);
     transition: 0.7s ease;
 }
 
 #extra:hover, #extra:focus {
-    border: double 5px var(--light-yellow);
+    border: solid 5px var(--light-yellow);
 }
 
 #extra h1 {
     width: 190px;
-    border: double 3px var(--yellow);
+    border: solid 3px var(--yellow);
     transition: 0.7s ease;
 }
 
 #extra h1:hover, h1:focus {
     width: 210px;
     padding: 3%;
-    border: double 3px var(--light-yellow);
+    border: solid 3px var(--light-yellow);
 }
 
 #cursos-lazeres {
@@ -503,9 +594,122 @@ main h1 {
     transition: 0.7s ease;
 }
 
+#cursos-titulo:hover, #cursos-titulo:focus {
+    width: 240px;
+    padding: 12px;
+    border: solid 0.5px var(--light-yellow);
+}
+
+#mec-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+#mec-indus {
+    background-color: var(--header-black);
+    color: var(--footer-white);
+    width: 85%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+    transition: 0.7s ease;
+}
+
+#mec-indus:hover, #mec-indus:focus {
+    color: var(--white);
+    border: solid 0.5px var(--light-yellow);
+}
+
+#mec-indus ul {
+    width: 560px;
+    margin-bottom: 20px;
+}
+
+#mec-indus li > h4 {
+    font-size: larger;
+    margin-bottom: 7%;
+}
+
+#mec-indus img {
+    padding: 7px;
+    transition: 0.7s ease;
+}
+
+#mec-indus img:hover, img:focus {
+    width: 320px;
+}
+
+#mec-indus  li > a {
+    color: var(--footer-white);
+    transition: 0.7s ease;
+}
+
+#mec-indus li > a:hover, li > a:focus {
+    color: var(--white);
+    font-size: 20.5px;
+}
+
+#dev-tec {
+    background-color: var(--header-black);
+    color: var(--footer-white);
+    width: 85%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+    transition: 0.7s ease;
+}
+
+#dev-tec:hover, #dev-tec:focus {
+    color: var(--white);
+    border: solid 0.5px var(--light-yellow);
+}
+
+#dev-tec ul {
+    width: 560px;
+    margin-bottom: 20px
+}
+
+#dev-tec li > h4 {
+    font-size: larger;
+    margin-bottom: 7%;
+}
+
+#dev-tec img {
+    padding: 7px;
+    transition: 0.7s ease;
+}
+
+#dev-tec img:hover, img:focus {
+    width: 320px;
+}
+
+#dev-tec  li > a {
+    color: var(--footer-white);
+    transition: 0.7s ease;
+}
+
+#dev-tec li > a:hover, li > a:focus {
+    color: var(--white);
+    font-size: 20.5px;
+}
+
+#lazeres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #lazeres-titulo {
     font-size: 25px;
-    width: 220px;
+    width: 210px;
     padding: 7px;
     background-color: var(--header-black);
     border: solid 0.5px var(--yellow);
@@ -513,16 +717,62 @@ main h1 {
     transition: 0.7s ease;
 }
 
+#lazeres-titulo:hover, #lazeres-titulo:focus {
+    width: 230px;
+    padding: 12px;
+    border: solid 0.5px var(--light-yellow);
+} 
+
+#lazeres-topicos ul {
+    color: var(--footer-white);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    transition: 0.7s ease;
+}
+
+#lazeres-topicos li {
+    background-color: var(--header-black);
+    border: solid 0.5px var(--yellow);
+    width: 190px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s ease;
+}
+
+#lazeres-topicos li:hover, li:focus {
+    font-size: 21.3px;
+    border: solid 0.5px var(--light-yellow);
+    color: var(--white);
+    width: 200px;
+    padding: 12px;
+}
+
+#lazeres-topicos li > img {
+    margin-bottom: 10%;
+    transition: 0.7s ease;
+}
+
+#lazeres-topicos li > img:hover, li > img:focus {
+    width: 120px;
+    height: 121px;
+}
+
+
 #contatos {
     width: 90%;
     padding: 50px;
     background-color: var(--title-black);
-    border: double 5px var(--footer-white);
+    border: solid 5px var(--footer-white);
     transition: 0.7s ease;
 }
 
 #contatos:hover, #contatos:focus {
-    border: double 5px var(--footer-light-white);
+    border: solid 5px var(--footer-light-white);
 }
 
 #contatos h1 {
@@ -530,12 +780,62 @@ main h1 {
     padding: 15px;
     margin-bottom: 10%;
     background-color: var(--header-black);
-    border: double 3px var(--footer-white);
+    border: solid 3px var(--footer-white);
     transition: 0.7s ease;
 }
 
 #contatos h1:hover, h1:focus {
     width: 240px;
     padding: 3%;
-    border: double 3px var(--footer-light-white);
+    border: solid 3px var(--footer-light-white);
+}
+
+#contatos-topicos ul {
+    display: flex;
+    color: var(--footer-white);
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.7s ease;
+}
+
+#contatos-topicos li {
+    background-color: var(--header-black);
+    border: solid 0.5px var(--footer-white);
+    width: 160px;
+    height: 160px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s ease;
+}
+
+#contatos-topicos li:hover, li:focus {
+    border: solid 0.5px var(--footer-light-white);
+    color: var(--white);
+    width: 180px;
+    height: 180px;
+    padding: 12px;
+}
+
+#contatos-topicos li > img {
+    margin-bottom: 5%;
+    transition: 0.7s ease;
+}
+
+#contatos-topicos li > img:hover, li > img:focus {
+    width: 80px;
+    height: 81px;
+}
+
+#contatos-topicos  li > a {
+    color: var(--footer-white);
+    transition: 0.7s ease;
+}
+
+#contatos-topicos li > a:hover, li > a:focus {
+    color: var(--white);
+    font-size: 22px;
 }
