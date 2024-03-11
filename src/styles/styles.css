@@ -651,7 +651,7 @@ main h1 {
 #mec-indus {
     background-color: var(--header-black);
     color: var(--footer-white);
-    width: 85%;
+    width: 77%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -667,7 +667,7 @@ main h1 {
 }
 
 #mec-indus ul {
-    width: 560px;
+    width: 500px;
     margin-bottom: 20px;
 }
 
@@ -698,7 +698,7 @@ main h1 {
 #dev-tec {
     background-color: var(--header-black);
     color: var(--footer-white);
-    width: 85%;
+    width: 77%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -768,7 +768,7 @@ main h1 {
     color: var(--footer-white);
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 10px;
     transition: 0.7s ease;
 }
 
@@ -879,4 +879,8 @@ main h1 {
 #contatos-topicos li > a:hover, li > a:focus {
     color: var(--white);
     font-size: 22px;
+}
+
+@media screen and (width: ) {
+    
 }
