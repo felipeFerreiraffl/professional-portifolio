@@ -52,4 +52,4 @@ function showSlides(n) {
 }
 
 var w = window.innerWidth;
-console.log(w);
+alert(w);
