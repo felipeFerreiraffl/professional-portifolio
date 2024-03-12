@@ -187,7 +187,7 @@ main h1 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 #home-texto{
@@ -902,5 +902,24 @@ main h1 {
 
     #menu-logo {
         display: none;
+    }
+
+    #home > div > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #portfolio-1-img {
+        width: 430px;
+    }
+
+    #portfolio-1-img ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #portfolio-1-img li {
+        text-indent: 20px;
     }
 }
