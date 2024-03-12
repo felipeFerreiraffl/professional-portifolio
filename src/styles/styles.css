@@ -187,6 +187,7 @@ main h1 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    gap: 20px;
 }
 
 #home-texto{
@@ -222,7 +223,7 @@ main h1 {
 }
 
 #home-image img:hover, img:focus {
-    width: 280px;
+    width: 240px;
     filter: none;
     border: solid 5px var(--lime-green);
 }
@@ -881,6 +882,60 @@ main h1 {
     font-size: 22px;
 }
 
-@media screen and (width: ) {
-    
+@media screen and (max-width: 1029.33px) {
+    #menu {
+        width: 175px;
+    }
+
+    #menu-logo img {
+        width: 120px;
+        height: 100px;
+    }
+
+    #menu-logo img:hover, img:focus {
+        width: 140px;
+        height: 120px;
+    }
+
+    #home, #sobre-mim, #portfolio, #extra, #contatos {
+        width: 70%;
+    }
+
+    #home-texto {
+        width: 70%;
+    }
+
+    #home-image img {
+        width: 200px;
+    }
+
+    #home-image img:hover, img:focus {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #home > div > div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #home-texto {
+        width: 90%;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #home-texto {
+        display: none;
+    }
+
+    #home, #sobre-mim, #portfolio, #extra, #contatos {
+        width: 50%;
+    }
 }
