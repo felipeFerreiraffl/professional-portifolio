@@ -909,17 +909,27 @@ main h1 {
         flex-direction: column;
     }
 
-    #portfolio-1-img {
+    #portfolio-1-img, #portfolio-2-img {
         width: 430px;
     }
 
-    #portfolio-1-img ul {
+    #portfolio-1-img ul, #portfolio-2-img ul {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
 
-    #portfolio-1-img li {
+    #portfolio-1-img li, #portfolio-2-img li {
         text-indent: 20px;
+    }
+
+    #mec-indus, #dev-tec {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
     }
 }
