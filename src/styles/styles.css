@@ -48,10 +48,11 @@ body {
     padding-top: 3%;
 }
 
-#menu nav {
+#menu nav > ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 #menu a {
@@ -107,8 +108,7 @@ body {
 }
 
 #menu-logo {
-    font-size: 15px;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
 }
 
 #menu-logo img {
@@ -882,35 +882,94 @@ main h1 {
     font-size: 22px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
     #menu {
-        height: 40px;
+        height: 50px;
         width: 100%;
         position: fixed;
         border-bottom: solid 1px var(--footer-white);
         z-index: 1000;
     }
     
-    #menu nav {
+    #menu nav > ul {
         display: flex;
-        flex-direction: row;
-        text-align: center;
         align-items: center;
-        gap: 14px;
+        flex-direction: row;
         margin-left: 20px;
-        margin-top: -8px;
+        gap: 10px;
+        margin-top: -13%;
     }
-
+    
     #menu a {
         color: var(--footer-white);
-        font-size: 13px;
+        font-size: 10px;
     }
 
     #menu a:hover, a:focus {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     #menu-logo {
-        display: none;
+        margin-top: 75px;
+    }
+
+    #menu-logo img{
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+    }
+
+    #menu-logo img:hover {
+        width: 35px;
+        height: 35px;
+    }
+
+    main, footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 15%;
+        width: 350px;
+    }
+
+    main h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #home h1 {
+        width: 160px;
+    }
+
+    #home h1:hover {
+        width: 160px;
+        padding: 10px;
+        border: solid 3px var(--h1-green);
+    }
+
+    #home > div > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home-texto {
+        width: 250px;
+    }
+    
+    #home-texto h4 {
+        font-size: 20px;
+    }
+
+    #home-texto p {
+        font-size: 10px;
+    }
+
+    #home-image img {
+        width: 180px;
+    }
+    
+    #home-image img:hover, img:focus {
+        width: 200px;
     }
 }
