@@ -882,7 +882,7 @@ main h1 {
     color: var(--white);
     font-size: 22px;
 }
-
+ /* Tela responsiva para celular 430px */
 @media screen and (max-width: 430px) {
     #menu {
         height: 50px;
